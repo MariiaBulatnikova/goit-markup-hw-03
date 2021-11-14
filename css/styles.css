@@ -161,6 +161,10 @@ img {
   align-items: center;
 }
 /* -----------------HERO PORTFOLIO--------------- */
+.hero {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .hero-btn {
   font-family: inherit;
@@ -176,6 +180,8 @@ img {
   min-height: 38;
   border-radius: 4px;
   border-color: transparent;
+
+  padding: 6px 22px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -203,8 +209,7 @@ img {
 .hero-list {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .hero-link:not(:last-child) {
@@ -214,9 +219,8 @@ img {
 .list-img {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 88px;
   margin-left: -30px;
-  margin-bottom: 0;
+  margin-bottom: -30px;
 }
 
 .list-img-item {
@@ -225,8 +229,8 @@ img {
   margin-bottom: 30px;
 }
 
-.list-img-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+/* .list-img-item:nth-last-child(-n + 3) {
+  margin-bottom: 0; */
 }
 
 .list-img-btn {
@@ -257,8 +261,8 @@ img {
 .main-btn {
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
+  background-color: var(--accent-color);
+  color: var(--first-button-color);
 }
 
 .main-section-title {
@@ -267,19 +271,30 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--second-title-color);
   margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* ---Наши особенности--- */
 
-.features-list {
-  display: flex;
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
+.features-list {
+  display: flex;
+}
+
 .features-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.features-list-item {
+  width: 270px;
 }
 
 .features-title {
@@ -328,7 +343,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-title-color);
 
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* ---Наша команда--- */
@@ -356,6 +371,11 @@ img {
   background: #ffffff;
 }
 
+.team-list-btn {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -364,7 +384,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-title-color);
 
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .second-team-title {
@@ -375,8 +395,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-title-color);
 
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -386,8 +405,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-
-  padding-bottom: 30px;
 }
 
 /* -----------------FOOTER--------------- */
@@ -406,7 +423,7 @@ img {
   color: var(--third-logo-text-color);
 
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-logo:hover,
@@ -431,7 +448,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--footer-text-color);
 
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-contacts-link {
